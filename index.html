@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="app.js"></script>
+</head>
+<body>
+    <button type="button" id="rtl-btn" class="btn btn-primary">Change To RTL</button>
+    <button type="button" id="ltr-btn" class="btn btn-danger">Change To LTR</button>
+<section id="my-section">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form class="my-form">
+                 <!--title-->
+                 <div class="row" id="title">
+                    <p>פרטים אישיים</p>
+                </div>
+                <!--first and last name-->
+                <div class="row">
+                    <div class="col-1">
+                        <img src="assets/user-circle-light.svg">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" class="form-control" placeholder="שם פרטי" id="first_name">
+                        
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="שם משפחה" id="last_name">
+                    </div>
+                </div>
+
+                <!--phone-->
+                <br/>
+                <div class="row" style="visibility: hidden;" id="phone-area">
+                    <div class="col-1">
+                        <img src="assets/phone-light (2).svg">
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" id="phone">
+                        <img class="flag-icon" src="assets/check-circle-light.svg" style="visibility: hidden;" id="check">
+                        <img class="flag-icon" src="assets/badge-check-light.svg" style="visibility: hidden;" id="success">
+                    </div>
+                    <div class="col-4">
+                        <select id="area-code" class="form-control">
+                            <option>972+</option>
+                            <option>83+</option>
+                            <option>234+</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!--verify-button-->
+                <div class="row" style="visibility: hidden;" id="ver-btn">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary" id="ver-button">אמת מספר</button>
+                    </div>
+                </div>
+                <!--verify-code-->
+                <div class="row" style="visibility: hidden;" id="ver-code">
+                    <div class="col-2">
+                        <img src="assets/badge-check-light.svg">
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" placeholder="הזן קוד אימות" id="ver-code-input">
+                    </div>
+                </div>
+                <div class="row" style="visibility: hidden;" id="ver-loader">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary" id="ver-code-button" >אמת מספר</button>
+                        <div id="load" class="loader" style="visibility: hidden;"></div>
+                    </div>
+                </div>
+                <!--teen/adult-->
+                <div class="row" style="visibility: hidden;" id="teen-adult">
+                    <div class="col-1">
+                        <input type="radio" id="huey" name="drone" value="huey"></div>
+                    <div class="col-4">
+                        <label id="radio">ממלא עבור עצמי</label>
+                    </div>
+                    <div class="col-1">
+                        <input type="radio" id="huey" name="drone" value="huey"
+                        checked>
+                   </div>
+                    <div class="col-4">
+                        <label id="radio">ממלא עבור קטין</label>
+                    </div>
+                </div>
+                <!--birthday-details-->
+                <div class="row" style="visibility: hidden;" id="birth">
+                    <div class="col-2">
+                        <img src="assets/birthday-cake-light.svg">
+                    </div>
+                    <div class="col-10">
+                        <input type="date" class="form-control text-right" placeholder="תאריך לידה" id="ver-code">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <div class="img-wrapper"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,190 @@
+body, html {
+    font-family: Rubik;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.row input, .row #area-code {
+  background: #F3F3F4 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  border: none;
+}
+
+.row input:focus {
+  background: #F3F3F4 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  opacity: 1;
+  border: none;
+}
+
+  section{
+    direction: rtl;
+    width: 750px;
+    height: 812px;
+    margin: 50px auto;
+    position:relative;
+    margin-bottom:80px;
+    overflow:hidden;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 20px #00000029;
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+  }
+
+  .img-wrapper{
+    background-image: url("assets/Image\ 2.png");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 830px;
+      right: 0;
+  }
+
+  #my-form {
+    direction: rtl;
+  }
+
+  .my-form {
+    width: 106%;
+  }
+
+  .flag-icon {
+    position: relative;
+    left: -5%;
+    bottom: 52%;
+  }
+
+  #ver-button, #ver-code-button {
+    height: 35px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 120px;
+    font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: 300;
+  } 
+
+  #verify-c {
+    right: 15px;
+  }
+  
+  #birthday {
+    width: 307px;
+    height: 35px;
+    margin-right: 14px;
+    margin-left: 5px;
+  }
+
+  label {
+    text-align: right;
+    letter-spacing: 0px;
+    color: #413F3F;
+    opacity: 1;
+    width: 130px;
+  }
+
+  #title {
+    margin-top: 12px;
+  }
+
+  p{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+
+  .my-bt {
+    position: absolute;
+    margin-right: -90px;
+    width: 150px;
+  }
+
+  .my-sec-btn {
+    position: absolute;
+    margin-right: -90px;
+    width: 150px;  
+  }
+
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    right: 103px;
+    top: 20px;
+    position: absolute;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #verification-area {
+    position: absolute;
+    top: 217px;
+    margin-right: 0px;
+  }
+
+  #ver {
+    margin-right: 14px;
+  }
+
+
+  .my-radio-section {
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .my-form .col {
+      max-width: 50%;
+    }
+    
+    div .img-wrapper { 
+      height: 225px !important;
+      bottom: 150px;
+      display: block;
+    }
+
+    .my-form {
+      position: relative;
+      top: 222px;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 -1rem 1rem -1rem;
+    }
+  
+    section{
+      width: 375px;
+      height: 812px;
+      margin: 50px auto;
+      position:relative;
+      margin-bottom:80px;
+      overflow:hidden;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 20px #00000029;
+      border: 1px solid #CECECE;
+      border-radius: 6px;
+    }
+
+    #birth {
+      position: relative;
+      top: -40px;
+    }
+
+  }
+
+
